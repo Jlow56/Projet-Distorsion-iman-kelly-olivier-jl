@@ -65,8 +65,7 @@ form input:focus {
     overflow: hidden;
 	background-color: #3E606F;
     border-radius: 0px 0px 6px 6px;
-    display: grid;
-    grid-auto-columns: auto;
+
 }
 .navbar ul {
     list-style-type: none;
