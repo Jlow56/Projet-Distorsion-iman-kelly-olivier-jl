@@ -1,9 +1,9 @@
 <?php
-class Category {
+class Channel {
     
     private ?int $id = null;
-
-	public function __construct(private string $name)
+ 
+	public function __construct(private string $name, private int $id_category)
 	{
    
 	}
@@ -27,4 +27,14 @@ class Category {
 	{
 		$this->username = $name;
 	}
+
+    public function getId_category(): DateTime
+    {
+        return $this->Id_category;
+    }
+
+    public function setId_category(int $id_category): void
+    {
+        $this->createdAt = $id_category;
+    }
 }
