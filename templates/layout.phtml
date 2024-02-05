@@ -5,11 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Blog">
 	<title>Chat Distorsion</title>
-	<link rel="stylesheet" href="assets/styles/css/style.css">
+	<link rel="stylesheet" href="../assets/styles/css/style.css">
 </head>
 <body>
 	<header>
-		<a href="index.php"><h1>Distorsion</h1></a>
+		<img class="salon" src="../assets/img/espace_social.jpg"><a href="index.php"></img></a>
+		
+		<img class="logo" src="../assets/img/logo (3).jpg"></img>
+		
 		<ul>
 		  <li><a class="active" href="index.php">Home</a></li>
 		  <li><a href="#chat">Chat</a></li>
@@ -18,8 +21,8 @@
 	
 	<main>
 		<div class ="left">
-			<ol>
-				<li>Cinéma 
+			<ul>
+				<li class="categ" >Cinéma 
 					<ul>	
 						<li>Action</li>
 						<li>Comédie</li>
@@ -27,7 +30,7 @@
 					</ul>
 				</li>
 			 
-				<li>Littérature
+				<li class="categ" >Littérature
 					<ul>
 						<li>Roman</li>
 						<li>Policier</li>
@@ -35,7 +38,7 @@
 					</ul>
 				</li>
 			
-				<li>Jeux vidéo
+				<li class="categ" >Jeux vidéo
 					<ul>
 						<li>Mario</li>
 						<li>Halo</li>
@@ -43,22 +46,25 @@
 					</ul>
 				</li>
 				
-			</ol>
+			</ul>
 		</div>
 		
-		<div class="right">
-			<form class="chat-form">
+		<div class ="right">
+			<form class ="chat-form">
 	            <div class="group-inp">
-	                <textarea placeholder="Enter your message here" minlength="1" maxlength="1500"></textarea>
-	                
+	                <textarea minlength="1" maxlength="1500"></textarea>
 	            </div>
-					<input type="text" name="Message"/>
+	            <div class ="msg">
+					<input placeholder="Enter your message here"  type="text" name="Message"/>
 	           		<button class="submit" type="submit">Envoyer</button>
-	        </div>
+	        	</div>
 	
 	    	</form>
 	    </div>
 	</main>
+	<footer>
+		<p>Copyright Olivier,Kelly,Iman, Jean-louis Corps </p>
+	</footer>
 
 </body>
 </html>

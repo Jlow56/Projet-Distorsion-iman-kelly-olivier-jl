@@ -1,6 +1,5 @@
 <?php
-require 'connexion.php';
-require 'autoload.php';
+require 'config/connexion-jl.php';
 
 // Récupérer les catégories
 $categories = [];
@@ -11,7 +10,7 @@ while ($data = $queryCategories->fetch()) {
 
 // Récupérer les salons
 $salons = [];
-$querySalons = $bdd->query('SELECT * FROM salons');
+$querySalons = $bdd->query('SELECT * FROM channel');
 while ($data = $querySalons->fetch()) {
     $salons[] = new Salon($data['id'], $data['name'], $data['category_id']);
 }
