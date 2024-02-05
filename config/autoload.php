@@ -1,17 +1,15 @@
 
 <?php
-require "connexion.php";
-
 
 
 spl_autoload_register(function ($class_name) {
     include $class_name . '.php';
 });
-?>
 
-// Category.php
-<?php
-class Category
+
+// Categories.php
+
+class Categories
 {
     private $id;
     private $name;
@@ -32,11 +30,11 @@ class Category
         return $this->name;
     }
 }
-?>
 
-// Salon.php
-<?php
-class Salon
+
+// channel.php
+
+class channel
 {
     private $id;
     private $name;
