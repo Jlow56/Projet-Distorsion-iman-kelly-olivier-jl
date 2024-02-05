@@ -1,0 +1,44 @@
+body > header {
+  width:100vw;
+  border-bottom: 1px solid white;
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+
+  h1 {
+    font-size: 2rem;
+    color:white;
+    grid-column: 1 / 2;
+    padding : 0 0.5rem;
+  }
+
+  nav {
+    grid-column: 2 / 3;
+    ul {
+      height:100%;
+      list-style: none;
+      padding: 0;
+      margin:0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-self: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+
+        a {
+          color:white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

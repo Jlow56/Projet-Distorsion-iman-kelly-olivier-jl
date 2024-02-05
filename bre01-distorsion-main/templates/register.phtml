@@ -1,0 +1,25 @@
+<main id="register">
+    <?php require "templates/partials/_aside.phtml"; ?>
+    <form method="POST" action="index.php?route=check-register" enctype="multipart/form-data">
+        <h2>Create an account and start posting messages</h2>
+        <fieldset>
+            <label for="username">
+                Username
+            </label>
+            <input type="text" name="username" id="username" />
+        </fieldset>
+        <fieldset>
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="password" id="password" />
+        </fieldset>
+        <fieldset>
+            <label for="image">
+                Profile image
+            </label>
+            <input type="file" name="image" id="image" />
+        </fieldset>
+        <button type="submit">Register</button>
+    </form>
+</main>
