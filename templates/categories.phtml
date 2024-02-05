@@ -1,0 +1,13 @@
+<section>
+    <h1>Catégories</h1>
+    <ul>
+        <ul>
+            <?php foreach ($categories as $categorie){ ?>
+                <h2><?= $categorie['categories_name']?>
+                </h2><a href="index.php?route=create_categorie">+</a>
+                <?php foreach ($channels as $channel){ ?>
+                <li><?= $channel['channel_name']?>
+                <a href="index.php?route=create_channel">+</a></li>
+        </ul>
+    </ul>
+</section>
