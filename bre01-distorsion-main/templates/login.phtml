@@ -1,0 +1,19 @@
+<main id="login">
+    <?php require "templates/partials/_aside.phtml"; ?>
+    <form method="POST" action="index.php?route=check-login">
+        <h2>Welcome back !</h2>
+        <fieldset>
+            <label for="username">
+                Username
+            </label>
+            <input type="text" name="username" id="username" />
+        </fieldset>
+        <fieldset>
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="password" id="password" />
+        </fieldset>
+        <button type="submit">Login</button>
+    </form>
+</main>

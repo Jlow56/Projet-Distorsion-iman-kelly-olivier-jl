@@ -1,0 +1,40 @@
+<aside>
+    <?php
+
+    if(isset($_SESSION["user"])) {
+
+    ?>
+    <h2 id="cat-label">Categories <button id="btn-add-category" aria-label="Open the add category form"><span class="bi bi-plus-circle"></span></button></h2>
+    <form id="add-category" class="closed">
+        <input type="text" id="cat-name" name="cat-name" aria-label="Category Name"/>
+        <button type="submit" aria-label="Add"><span class="bi bi-check2"></span></button>
+    </form>
+    <?php
+        foreach($data["categories"] as $category)
+        {
+            ?>
+            <h3>
+                <?= $category["category"]->getName() ?> <button class="btn-add-channel" data-cat="<?= $category["category"]->getId() ?>" aria-label="Open the add channel form"><span class="bi bi-plus-circle"></span></button>
+            </h3>
+            <form class="add-channel closed" data-cat="<?= $category["category"]->getId() ?>">
+                <input type="hidden" name="cat-id" id="cat-id" value="<?= $category["category"]->getId() ?>" />
+                <input type="text" id="chan-name" name="chan-name" aria-label="Channel Name"/>
+                <button type="submit" aria-label="Add"><span class="bi bi-check2"></span></button>
+            </form>
+            <ul data-cat="<?= $category["category"]->getId() ?>">
+                <?php
+                    foreach($category["channels"] as $channel)
+                {
+                ?>
+                <li data-chan="<?= $channel->getId() ?>">
+                    <?= $channel->getName() ?>
+                </li>
+                <?php
+                }
+                ?>
+            </ul>
+            <?php
+        }
+    }
+    ?>
+</aside>

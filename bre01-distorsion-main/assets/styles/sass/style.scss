@@ -1,0 +1,21 @@
+@import "vars/colors";
+@import "layouts/header";
+@import "layouts/aside";
+@import "layouts/chat";
+@import "layouts/auth";
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding:0;
+  margin:0;
+  max-width:100vw;
+  height:100vh;
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  background-color: #555;
+}
